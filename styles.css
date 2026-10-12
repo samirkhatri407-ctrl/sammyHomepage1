@@ -1,0 +1,285 @@
+:root {
+  --primary: #0d3b66;
+  --secondary: #f4b942;
+  --accent: #d96c06;
+  --dark: #102a43;
+  --light: #f7f7f7;
+  --text: #22313f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text);
+  padding-top: 76px;
+  background: linear-gradient(180deg, #f9fbff 0%, #eef5ff 100%);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.btn {
+  border-radius: 999px;
+  padding: 0.8rem 1.5rem;
+  font-weight: 600;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(13, 59, 102, 0.16);
+}
+
+.bg-primary {
+  background: linear-gradient(135deg, var(--primary), #144a7a) !important;
+}
+
+.navbar-brand,
+.nav-link {
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.9);
+  padding: 0.7rem 1rem !important;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+}
+
+.hero-section,
+.page-banner {
+  position: relative;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-section {
+  background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1600&q=80');
+}
+
+.about-banner {
+  background-image: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1600&q=80');
+}
+
+.culture-banner {
+  background-image: url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1600&q=80');
+}
+
+.destinations-banner {
+  background-image: url('https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=1600&q=80');
+}
+
+.food-banner {
+  background-image: url('https://images.pexels.com/photos/30205313/pexels-photo-30205313.jpeg');
+}
+
+.contact-banner {
+  background-image: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80');
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(12, 28, 44, 0.52);
+}
+
+.hero-content,
+.banner-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content h1,
+.banner-content h1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.eyebrow,
+.section-tag {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--secondary);
+}
+
+.section-tag {
+  color: var(--accent);
+}
+
+.hero-content .lead {
+  max-width: 760px;
+  font-size: 1.1rem;
+}
+
+.hero-badges {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.hero-badges span {
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+  padding: 0.6rem 1.1rem;
+  color: #fff;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  backdrop-filter: blur(6px);
+}
+
+.feature-card,
+.destination-card,
+.food-card,
+.stat-box,
+.contact-form {
+  background: #fff;
+  border: 1px solid #ebedf1;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(14, 32, 52, 0.08);
+}
+
+.feature-card,
+.food-card,
+.destination-card {
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.feature-card:hover,
+.food-card:hover,
+.destination-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 30px rgba(13, 59, 102, 0.12);
+}
+
+.food-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.feature-card,
+.food-card .card-body,
+.destination-card .card-body {
+  padding: 1.5rem;
+}
+
+.food-card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.icon-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 14px;
+  background: rgba(13, 59, 102, 0.08);
+  display: grid;
+  place-items: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.destination-card img,
+.food-card img {
+  height: 240px;
+  object-fit: cover;
+}
+
+.destination-card h3,
+.food-card h3,
+.feature-card h3 {
+  margin-top: 0.85rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.custom-list li {
+  margin-bottom: 0.8rem;
+  font-size: 1.05rem;
+}
+
+.cta-section {
+  background: linear-gradient(135deg, #0d3b66, #1a5c8a);
+}
+
+.stat-box {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.stat-box h3 {
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 0.25rem;
+}
+
+.contact-info p {
+  font-size: 1.05rem;
+  margin-bottom: 0.75rem;
+}
+
+.contact-form {
+  padding: 1.5rem;
+}
+
+.form-control {
+  border-radius: 12px;
+  padding: 0.8rem 1rem;
+  border: 1px solid #d7dde6;
+}
+
+.form-control:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 0.2rem rgba(13, 59, 102, 0.15);
+}
+
+.btn-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-primary:hover {
+  background: #0a2d4d;
+  border-color: #0a2d4d;
+}
+
+footer {
+  margin-top: 3rem;
+}
+
+@media (max-width: 991.98px) {
+  body {
+    padding-top: 70px;
+  }
+
+  .navbar-nav {
+    padding-top: 1rem;
+  }
+}
