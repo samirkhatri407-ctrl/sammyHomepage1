@@ -17,9 +17,6 @@ This project is a static multi-page website about Nepal built with HTML, Bootstr
 - Nepal-themed content and imagery
 - Contact form design
 
-## Run locally
-Open the project folder in a browser. This is a static website, so no build step or Python server is required.
-
 ## Project structure
 - `index.html` - homepage
 - `about.html` - about Nepal
@@ -29,4 +26,3 @@ Open the project folder in a browser. This is a static website, so no build step
 - `contact.html` - contact page
 - `styles.css` - custom styling
 - `script.js` - small JavaScript interactions
-
