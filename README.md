@@ -18,17 +18,7 @@ This project is a static multi-page website about Nepal built with HTML, Bootstr
 - Contact form design
 
 ## Run locally
-Open the project folder in a browser, or serve it locally with a simple HTTP server:
-
-```bash
-python -m http.server 8000
-```
-
-Then visit:
-
-```text
-http://localhost:8000
-```
+Open the project folder in a browser. This is a static website, so no build step or Python server is required.
 
 ## Project structure
 - `index.html` - homepage
